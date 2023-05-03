@@ -1,16 +1,16 @@
-import request from 'supertest';
-import { app } from '../index.js'
-describe('Register API', () => {
+const request = require('supertest')
+const app = require('../index')
+describe('POST/register', () => {
     test('Should register a new User', async () => {
         const res = await request(app)
-            .post('http://localhost:2000/register')
+            .post('/register')
             .send({
                 username: 'Varsha',
                 email: 'varsha.devalla@gmail.com',
                 password: 'varsha@1',
                 phoneNumber: '6305340692'
             });
-        expect(res.statusCode).toEqual(201);
+        expect(res.body.success).toBe(true);
     });
     test('should not register a new user with missing fields', async () => {
         const res = await request(app)
