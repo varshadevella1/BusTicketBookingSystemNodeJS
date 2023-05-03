@@ -1,0 +1,3 @@
+TravelsName,type,fare,isAvailable,journeyDate,origin,destination,arrivalTime,departureTime,BusNumber,seatsAvailability
+Venkateshware Tours and Travels,AC,1200,true,28-04-2023,Hyderabad,Banglore,7:00 AM,8:00 PM,TS09FD458010,30
+Kaveri Travels,Deluxe,1300,true,28-04-2023,Banglore,Kharadi,6:00 PM,10:00 AM,TS09FD453490,30
